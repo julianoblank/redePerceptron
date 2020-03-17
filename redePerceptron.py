@@ -5,6 +5,10 @@ class redePerceptron:
                                 [0, 1, 0],
                                 [1, 0, 0],
                                 [1, 1, 1]]
+            for l in range(0,len(entradaAnd)):
+                print()
+                for c in range(0,3):
+                    print(f'[{entradaAnd[l][c]}]', end='')                    
             return entradaAnd                  
         elif(entradas == "OR"):
             entradaOr = [       [0, 0, 0],

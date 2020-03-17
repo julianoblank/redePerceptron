@@ -1,13 +1,20 @@
+class redePerceptron:
+   def identificaEntrada(entradas):
+        if(entradas == "AND"):
+            entradaAnd = [      [0, 0, 0],
+                                [0, 1, 0],
+                                [1, 0, 0],
+                                [1, 1, 1]]
+            return entradaAnd                  
+        elif(entradas == "OR"):
+            entradaOr = [       [0, 0, 0],
+                                [0, 1, 1],
+                                [1, 0, 1],
+                                [1, 1, 1]]
+            return entradaOr
+   def pegarOsPesos(pesoA, pesoB):
+        pesoA = pesoA
+        pesoB = pesoB
 
-var = int(input( 'Digite sua idade: '))
-
-
-
-def entradas(var1):
-    
-    print('sua idade é: ', var1)
-    while(var1 < 40):
-        var1 = int(input( 'Digite sua idade: '))
-        print('sua idade é: ', var1)
-
-entradas(var)
+        return 'Pesos Iniciais: \n Peso A: ' + pesoA + '\n Peso B: ' + pesoB
+        

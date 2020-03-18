@@ -102,10 +102,11 @@ class Janela:
     def treinar(self, event):
         
         self.setText('\n Treinando a rede, porta: ' + self.comboBoxEntrada.get())
-        self.matrizResposta = str(redePerceptron.identificaEntrada(self.comboBoxEntrada.get()))
+        self.setText('\n'+redePerceptron.pegarOsPesos(redePerceptron,self.pesoA.get(),self.pesoB.get()))
+        self.matrizResposta = str(redePerceptron.identificaEntrada(redePerceptron,self.comboBoxEntrada.get()))
         self.setText('\n Matriz que será treinada: ')
         self.setText(self.matrizResposta)
-        self.setText('\n'+redePerceptron.pegarOsPesos(self.pesoA.get(),self.pesoB.get()))
+        
         #self.retornoDaRede = redePerceptron.setarVariaveis(self.entradaA.get())
         #self.setText('Resposta da rede: ' + self.retornoDaRede)
         
